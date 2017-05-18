@@ -1,9 +1,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <h1 style="position: relative;left:32%;color:#C8254D; font-family:'Courier New'">
        Loklak data visualisation
     </h1>
@@ -12,7 +12,7 @@
     <div id="myfirstchart" style="height: 380px;margin-top:50px;overflow-x: auto;"></div>
     <script type="text/javascript">
       $.ajax({
-          url: "http://api.loklak.org/api/search.json?callback=JSON_CALLBACK&q=fossasia%20since:2015-12-10&source=cache&count=0&fields=created_at",
+          url: "https://api.loklak.org/api/search.json?callback=JSON_CALLBACK&q=fossasia%20since:2015-12-10&source=cache&count=0&fields=created_at",
           jsonp: "callback",
           dataType: "jsonp",
           success: function( response ) {
