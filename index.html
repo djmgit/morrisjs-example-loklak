@@ -5,11 +5,12 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <h1 style="position: relative;left:32%;color:#C8254D; font-family:'Courier New'">
-       Loklak data visualisation
+       Loklak data visualisation <br>
     </h1>
   </head>
   <body style="overflow-x: hidden;">
     <div id="myfirstchart" style="height: 380px;margin-top:50px;overflow-x: auto;"></div>
+    <span style="margin-top: 500px; margin-left: 28%;color:#C8254D; font-family:'Courier New'"> Plot showing number of tweets containing the word 'fossasia' vs date </span>
     <script type="text/javascript">
       $.ajax({
           url: "https://api.loklak.org/api/search.json?callback=JSON_CALLBACK&q=fossasia%20since:2015-12-10&source=cache&count=0&fields=created_at",
